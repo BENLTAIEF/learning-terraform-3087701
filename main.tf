@@ -43,7 +43,7 @@ module "vpc" {
   name = "dev"
   cidr = "10.0.0.0/16"
 
-  azs             = ["eu-west-3a"]
+  azs             = ["eu-west-3a", "eu-west-3b", "eu-west-3c"]
   public_subnets  = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
 
   tags = {
